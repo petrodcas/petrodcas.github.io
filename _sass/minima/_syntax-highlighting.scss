@@ -1,0 +1,85 @@
+$common: #A9B7C6;
+$annotations: #BBB529;
+$generic_comment: #b2beb2;//#808080;
+$special_comment: #629755;
+$generic_keyword: #CC7832;
+$label: #467CDA;
+$number: #6897BB;
+$function: #FFC66D;
+$typed_generics_parameter: #20999D;
+$property: #9876AA;
+$string: #6A8759;
+$string_scape_symbol: #CC7832;
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff;
+  @extend %vertical-rhythm;
+
+  .highlighter-rouge & {
+    background: #3e3e3e;
+  }
+
+  color: $common;
+  .c     { color: $generic_comment; font-style: italic } // Comment
+  .err   { color: #a61717; background-color: #e3d2d2 } // Error
+  .k     { font-weight: bold; color: $generic_keyword } // Keyword
+  .o     { font-weight: bold } // Operator
+  .cm    { color: $generic_comment; font-style: italic } // Comment.Multiline
+  .cp    { color: $generic_comment; font-weight: bold } // Comment.Preproc
+  .c1    { color: $generic_comment; font-style: italic } // Comment.Single
+  .cs    { color: $special_comment; font-weight: bold; font-style: italic } // Comment.Special
+  .gd    { color: #000; background-color: #fdd } // Generic.Deleted
+  .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
+  .ge    { font-style: italic } // Generic.Emph
+  .gr    { color: #a00 } // Generic.Error
+  .gh    { color: $special_comment } // Generic.Heading
+  .gi    { color: #000; background-color: #dfd } // Generic.Inserted
+  .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
+  .go    { color: #888 } // Generic.Output
+  .gp    { color: #555 } // Generic.Prompt
+  .gs    { font-weight: bold } // Generic.Strong
+  .gu    { color: #aaa } // Generic.Subheading
+  .gt    { color: #a00 } // Generic.Traceback
+  .kc    { color: $generic_keyword; font-weight: bold } // Keyword.Constant
+  .kd    { color: $generic_keyword; font-weight: bold } // Keyword.Declaration
+  .kp    { color: $generic_keyword; font-weight: bold } // Keyword.Pseudo
+  .kr    { color: $generic_keyword; font-weight: bold } // Keyword.Reserved
+  .kt    { color: $typed_generics_parameter; font-weight: bold } // Keyword.Type
+  .m     { color: $number } // Literal.Number
+  .s     { color: $string } // Literal.String
+  .na    { color: $property } // Name.Attribute
+  .nb    { color: $generic_keyword } // Name.Builtin
+  .nc    { color: $common; font-weight: bold } // Name.Class
+  .no    { color: $property } // Name.Constant
+  .ni    { color: $property } // Name.Entity
+  .ne    { color: #900; font-weight: bold } // Name.Exception
+  .nf    { color: $function;font-weight: bold } // Name.Function
+  .nn    { color: #555 } // Name.Namespace
+  .nt    { color: $annotations } // Name.Tag
+  .nv    { color: $common } // Name.Variable
+  .ow    { font-weight: bold } // Operator.Word
+  .w     { color: #bbb } // Text.Whitespace
+  .mf    { color: $number } // Literal.Number.Float
+  .mh    { color: $number } // Literal.Number.Hex
+  .mi    { color: $number } // Literal.Number.Integer
+  .mo    { color: $number } // Literal.Number.Oct
+  .sb    { color: $string } // Literal.String.Backtick
+  .sc    { color: $string } // Literal.String.Char
+  .sd    { color: $string } // Literal.String.Doc
+  .s2    { color: $string } // Literal.String.Double
+  .se    { color: $string_scape_symbol } // Literal.String.Escape
+  .sh    { color: $string } // Literal.String.Heredoc
+  .si    { color: $string_scape_symbol } // Literal.String.Interpol
+  .sx    { color: $string_scape_symbol } // Literal.String.Other
+  .sr    { color: $string } // Literal.String.Regex
+  .s1    { color: $string } // Literal.String.Single
+  .ss    { color: $string_scape_symbol } // Literal.String.Symbol
+  .bp    { color: $property } // Name.Builtin.Pseudo
+  .vc    { color: $generic_keyword } // Name.Variable.Class
+  .vg    { color: $property } // Name.Variable.Global
+  .vi    { color: $common} // Name.Variable.Instance
+  .il    { color: $number } // Literal.Number.Integer.Long
+}
